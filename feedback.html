@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Aniah's Poultry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ANIAH'S <span>POULTRY</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <button class="mobile-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="feedback.html">Feedback</a>
+    </div>
+
+    <div class="page-header">
+        <h1>Customer Feedback</h1>
+        <p>We value your opinions</p>
+    </div>
+
+    <section class="section feedback-section">
+        <div class="container" style="max-width: 600px;">
+            <div class="feedback-form">
+                <div id="feedbackSuccess" class="success-message">
+                    Thank you for your feedback! Re a leboga.
+                </div>
+                <form id="feedbackForm" onsubmit="return submitFeedback(event)">
+                    <div class="form-group">
+                        <label for="fbName">Full Name *</label>
+                        <input type="text" id="fbName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fbEmail">Email Address *</label>
+                        <input type="email" id="fbEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rate Our Bizz *</label>
+                        <select id="rating" required>
+                            <option value="">Select Rating...</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="poor">Poor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fbMessage">Your Feedback *</label>
+                        <textarea id="fbMessage" rows="5" required placeholder="Tell us about your thoughts..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col"><h4>ANIAH'S POULTRY</h4><p>Fresh poultry for local citizens.</p></div>
+            <div class="footer-col"><h4>Links</h4><a href="index.html">Home</a><a href="products.html">Products</a></div>
+            <div class="footer-col"><h4>Contact</h4><p>+267 71 234 567</p><p>info@aniahspoultry.co.bw</p></div>
+        </div>
+        <div class="footer-bottom"><p>2025 Aniah's Poultry.</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
